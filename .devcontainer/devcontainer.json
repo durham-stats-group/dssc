@@ -1,4 +1,13 @@
 {
-    "name": "${localWorkspaceFolderBasename}",
-    "image": "ghcr.io/durham-stats-group/rstudio"
+  "name": "${localWorkspaceFolderBasename}",
+  "image": "ghcr.io/durham-stats-group/rstudio",
+  "forwardPorts": [8787],
+  "portsAttributes": {
+    "8787": {
+      "label": "RStudio",
+      "requireLocalPort": true,
+      "onAutoForward": "ignore"
+    }
+  },
+  "postAttachCommand": "sudo rstudio-server start"
 }
