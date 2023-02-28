@@ -1,0 +1,4 @@
+{
+    "name": "${localWorkspaceFolderBasename}",
+    "image": "ghcr.io/durham-stats-group/rstudio"
+}
