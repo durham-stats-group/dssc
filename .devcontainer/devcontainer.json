@@ -1,6 +1,6 @@
 {
   "name": "${localWorkspaceFolderBasename}",
-  "image": "ghcr.io/durham-stats-group/rstudio",
+  "image": "ghcr.io/durham-stats-group/rstudio-prebuild",
   "forwardPorts": [8787],
   "portsAttributes": {
     "8787": {
