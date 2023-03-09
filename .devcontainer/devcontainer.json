@@ -1,6 +1,6 @@
 {
   "name": "${localWorkspaceFolderBasename}",
-  "image": "ghcr.io/durham-stats-group/rstudio-prebuild",
+  "image": "ghcr.io/durham-stats-group/rstudio",
   "forwardPorts": [8787],
   "portsAttributes": {
     "8787": {
@@ -9,5 +9,5 @@
       "onAutoForward": "ignore"
     }
   },
-  "postAttachCommand": "sudo rstudio-server start"
+  "postAttachCommand": "sudo rstudio-server start; . ./.devcontainer/startup_msg.sh"
 }
